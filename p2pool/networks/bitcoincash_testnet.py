@@ -11,9 +11,9 @@ PREFIX = '08c5541df85a8a65'.decode('hex')
 P2P_PORT = 19339
 MIN_TARGET = 0
 MAX_TARGET = 2**256//2**32 - 1
-PERSIST = False
+PERSIST = True # change to False to start new chain
 WORKER_PORT = 19338
-BOOTSTRAP_ADDRS = 'forre.st liteco.in 78.158.149.247'.split(' ')
+BOOTSTRAP_ADDRS = 'forre.st testnet.imaginary.cash 78.158.149.247'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-alt'
 VERSION_CHECK = lambda v: None if 100000 <= v else 'Bitcoin version too old. Upgrade to 0.11.2 or newer!' # not a bug. BIP65 support is ensured by SOFTFORKS_REQUIRED
 VERSION_WARNING = lambda v: None
